@@ -4,5 +4,11 @@
 		<jta-data-source>java:/inventarioDS</jta-data-source>
 		<class>inventarioo.model.entities.Producto</class>
 		<class>inventarioo.model.entities.Usuario</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="postgres://eznhkzxsxpsqbw:daecc035d5bbbd9863c0dc2f9198e1cb1507dcb48b58c4d9975d7a860eda9bee@ec2-52-23-14-156.compute-1.amazonaws.com:5432/d4uogl9aahhf11"/>
+			<property name="javax.persistence.jdbc.user" value="eznhkzxsxpsqbw"/>
+			<property name="javax.persistence.jdbc.password" value="daecc035d5bbbd9863c0dc2f9198e1cb1507dcb48b58c4d9975d7a860eda9bee"/>
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+		</properties>
 	</persistence-unit>
 </persistence>
