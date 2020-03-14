@@ -1,0 +1,14 @@
+ <datasource jndi-name="java:/inventarioDS" pool-name="inventarioDS">
+                    <connection-url>jdbc:postgresql://localhost:5432/inventario</connection-url>
+                    <driver-class>org.postgresql.Driver</driver-class>
+                    <driver>postgresql-42.2.9.jar</driver>
+                    <security>
+                        <user-name>postgres</user-name>
+                        <password>postgres</password>
+                    </security>
+                    <validation>
+                        <valid-connection-checker class-name="org.jboss.jca.adapters.jdbc.extensions.postgres.PostgreSQLValidConnectionChecker"/>
+                        <background-validation>true</background-validation>
+                        <exception-sorter class-name="org.jboss.jca.adapters.jdbc.extensions.postgres.PostgreSQLExceptionSorter"/>
+                    </validation>
+                </datasource>
